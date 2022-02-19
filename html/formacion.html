@@ -14,64 +14,54 @@
 
 <body>
     <header>
-        <nav>
-            <div class="menu">
-                <ul class="navegador">
-                    <li><a class="nav_a" href="../html/index.html">Acerca de mi</a></li>
-                    <li><a class="nav_a" href="../html/formacion.html">Formación</a></li>
-                    <li><a class="nav_a" href="../html/herramientas.html">Herramientas</a></li>
-                    <li><a class="nav_a" href="../html/servicios.html">Servicios</a></li>
-                    <li><a class="nav_a" href="../html/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="contenedor">
+            <ul class="navegador">
+                <li><a class="navegador__enlaces" href="../html/index.html">Acerca de mi</a></li>
+                <li><a class="navegador__enlaces" href="../html/formacion.html">Formación</a></li>
+                <li><a class="navegador__enlaces" href="../html/herramientas.html">Herramientas</a></li>
+                <li><a class="navegador__enlaces" href="../html/servicios.html">Servicios</a></li>
+                <li><a class="navegador__enlaces" href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
-
-    <section class="sobre_mi">
-        <div class="formacion">
-            <h2>Formación</h2>
-        </div>
-        <div class="f1">
-            <img class="logo_form" src="../img/CODER.png" alt="">
-            <h3>Desarrollo Web</h5>
+    <section class="contenedor-grid">
+        <div class="contenedor-grid__titulo"><h2>Formación</h2></div>
+            <div class="contenedor-grid__card1">
+                <img class="contenedor-grid__logo" src="../img/CODER.png" alt="">
+                <h3>Desarrollo Web</h5>
                 <h4>Coderhouse <br> (2021-2022)</h6>
-        </div>
-        <div class="f2">
-            <img class="logo_form" src="../img/UA.png" alt="">
+            </div>
+        <div class="contenedor-grid__card2">
+            <img class="contenedor-grid__logo" src="../img/UA.png" alt="">
             <h3>Gestión de redes sociales</h3>
             <h4>Universidad Austral <br>(2021)</h4>
         </div>
-        <div class="f1">
-            <img class="logo_form" src="../img/UCV.png" alt="">
+        <div class="contenedor-grid__card1">
+            <img class="contenedor-grid__logo" src="../img/UCV.png" alt="">
             <h3>Cs. de la Información: Bibliotecología</h3>
             <h4>Universidad Central de Venezuela<br>(2011)</h4>
         </div>
-    </section>
-    <section>
-        <div class="card">
-            <h2 class="proyectos">Proyectos</h2>
-            <img class="card-img-1" src="../img/card.png" alt="">
-            <div>
-                <h4 class="card-texto">Sitio Web - Biblioteca Universidad Austral (Enterprise) </h5>
-                    <p class="card-texto">Desarrollo y mantenimiento de la pagina web de la Biblioteca de la Universidad
-                        Austral</p>
-                    <a class="card-boton" href="https://austral.ent.sirsi.net/client/es_AR/facultades">Visitar</a>
+        </section>
+    <section class="contenedor-card">
+        <div>
+            <h2 class="contenedor-card__titulo">Proyectos</h2>
+            <img class="contenedor-card__imagen" src="../img/card.png" alt="">
             </div>
-        </div>
-        <div></div>
-
-    </section>
-    <br>
-    <br>
-    <br>
+        <div>
+            <h4 class="contenedor-card__texto">Sitio Web - Biblioteca Universidad Austral (Enterprise) </h5>
+            <p class="contenedor-card__texto">Desarrollo y mantenimiento de la pagina web de la Biblioteca de la Universidad Austral</p>
+            <a class="boton-verde" href="https://austral.ent.sirsi.net/client/es_AR/facultades">Visitar</a>
+            </div>
+        </section>
     <footer>
-        <p class="footer_1">Maria Manzanilla &#169</p>
-        <div class="footer_2">
-            <a href=""><img src="../img/Instagram_footer.png" alt=""></a>
-            <a href=""><img src="../img/Whatsapp_footer.png" alt=""></a>
-            <a href=""><img src="../img/LinkedIn_footer.png" alt=""></a>
+        <div class="contenedor-footer">
+            <p class="contenedor-footer__texto">&#169 2022. Todos los derechos reservados</p>
+            <div class="contenedor-footer__redes">
+                <a href=""><img src="../img/Instagram_footer.png" alt=""></a>
+                <a href=""><img src="../img/Whatsapp_footer.png" alt=""></a>
+                <a href=""><img src="../img/LinkedIn_footer.png" alt=""></a>
+            </div>
         </div>
     </footer>
 </body>
-
 </html>

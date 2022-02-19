@@ -1,9 +1,8 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body{
     background-image: url(../img/body_recortes.png);
@@ -13,58 +12,44 @@ body{
     min-height: 90vh;
 }
 
-  
-header {
-    margin: auto;
-    width: auto;  
+/*Navegador*/ 
+.contenedor{
+    width: auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 20px auto auto auto;
 }
 
-ul,
-ol {
-    list-style: none;
-}
-
-.menu{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: flex-end;
-margin: 20px auto auto auto;
-
-}
-.navegador, li a {
+.navegador {
     color: black;
     font-size: 20px;
     font-weight: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 15px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;  
 }
 
-.nav_a{
-    font-family: 'Playfair Display', serif;
+.navegador__enlaces {
+    font-family:'Playfair Display', serif;
     margin: 5px;
     color: black;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none; 
 }
 
-.nav_a:hover {
+.navegador__enlaces:hover {
     color: #f3c90eb4;    
 }
 
-.foto{
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
-}
-
 /*Pagina de inicio*/
-
-.contenedor_index{
+.contenedor-main{
     margin: 80px 10px 50px 10px;
     display:flex;
     flex-direction: row;
@@ -73,12 +58,13 @@ margin: 20px auto auto auto;
     text-align: center;
     align-items: center;
 }
-
-#h1_index:hover {
-    color: #641c0bd5;    
+.contenedor-main__foto{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
 }
 
-#h1_index{
+.contenedor-main__texto{
     font-size: 90px;
     font-family: 'Playfair Display', serif;
     color: #e2ae1d;
@@ -87,25 +73,41 @@ margin: 20px auto auto auto;
     justify-content: center;
     text-align: center;
 }
-  
-#texto1_index{
-    font-size: 50px;  
+.contenedor-main__texto:hover {
+    color: #641c0bd5;    
+} 
+
+.contenedor-main__parrafo1{
+    font-size: 50px;
 }
 
-#texto2_index{
+.contenedor-main__parrafo2{
     font-size: 25px;  
 }
 
-.fondo_index{
-    background-image: url(../img/body_recortes.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+/*Footer*/
+.contenedor-footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
+.contenedor-footer__texto{
+    margin: 10px;
+}
+
+.contenedor-footer__redes{
+    margin:10px;
+    text-decoration: none;
+    align-content: center;
+   
+}
 
 /*Formación*/
-
-.sobre_mi{
+.contenedor-grid{
     height: auto;
     width: auto;
     margin: 10px;
@@ -116,12 +118,7 @@ margin: 20px auto auto auto;
     animation-duration: 2s;
 }
 
-.logo_form{
-    height: 100px;
-    width: 100px;
-}
-
-.formacion {
+.contenedor-grid__titulo{
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
@@ -129,8 +126,13 @@ margin: 20px auto auto auto;
     align-items: center;
     justify-content: center;
 }
+.contenedor-grid__logo{
+    height: 100px;
+    width: 100px;
+}
 
-.f1 {
+
+.contenedor-grid__card1 {
     margin: 10px;
     grid-row-start: 2;
     grid-row-end: 4;
@@ -141,7 +143,7 @@ margin: 20px auto auto auto;
     justify-content: center; 
 }
 
-.f2{
+.contenedor-grid__card2{
     grid-row-start: 2;
     grid-row-end: 4;
     text-align: center;
@@ -153,10 +155,7 @@ margin: 20px auto auto auto;
     border-left: solid  black 1px;
 }
 
-.proyectos {
-    margin-top: 50px;
-}
-.card{
+.contenedor-card{
     margin: 10px;
     margin-bottom: 50px;
     display:flex;
@@ -165,20 +164,24 @@ margin: 20px auto auto auto;
     text-align: center;
     animation: slideInUp;
     animation-duration: 2s;
-   
 }
 
-.card-img-1{
+.contenedor-card__titulo {
+    margin-top: 50px;
+}
+
+
+.contenedor-card__imagen{
     width: 300px;
     height: 300px;
     align-items: center;
 }
 
-.card-texto{
-    margin: 10px;
+.contenedor-card__texto{
+    margin: 5px;
 }
 
-.card-boton{
+.boton-verde{
     padding: 10px;
     position: absolute;
     color: white;
@@ -189,18 +192,15 @@ margin: 20px auto auto auto;
 }
 
 
-
 /*Herramientas*/
 #carouselExampleControls{
     width: 1000px;
     height: 500px;
     margin: auto;
 }
-
-   
+ 
 
 /*Servicios*/
-
 .container-fluid{
     display: flex;
     flex-direction: row;
@@ -213,44 +213,22 @@ margin: 20px auto auto auto;
     
 }
 
-.logo_serv{
+.contenedor-servicios{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border-right: solid black 1px;
+}
+.contenedor-servicios__logo{
     height: 100px;
     width: 100px;
     margin-bottom: 30px;
 
 }
 
-.s1{
-    width: 400px;
-    height: 300px;
-    padding: 30px;
-    margin: 10px;
-    border-right: solid black 1px;
-    
-
-}
-
-.s2{
-    width: 400px;
-    height: 300px;
-    padding: 30px;
-    margin: 10px;
-    border-right: solid black 1px;
-
-}
-
-.s3{
-    width: 400px;
-    height: 300px;
-    padding: 30px;
-    margin: 10px;
-    border-right: solid black 1px;
-
-}
-
-
-/*Formulario*/
-.formulario{
+/*Contacto*/
+.contenedor-contacto{
     margin: 100px 100px 100px 100px;
     display: flex;
     flex-direction: row;
@@ -262,22 +240,18 @@ margin: 20px auto auto auto;
 
 }
 
-
 input, textarea{
     border: 0;
     outline: none;
-    width: 280px;
+    width: 380px;
 }
 
-.mapa{
-   margin: 50px;
-}
 
-.field{
+
+.formulario-campo{
+    margin: 20px 0px;
     border-bottom: solid black 1px;
-    border-radius: 10px;
     background-color: none;
-    padding: 10px;
     width: 450px; 
 }
 
@@ -291,34 +265,16 @@ input, textarea{
     color: white;
 
 }
-
-
-/*Footer*/
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    
+.contenedor-mapa{
+   margin: 50px;
 }
 
-.footer_1{
-    margin: 10px;
-}
 
-.footer_2 a{
-    margin:10px;
-    text-decoration: none;
-    align-content: center;
-   
-}
 
 /*Vista mobile*/
 
 @media only screen and (min-width: 0px) and (max-width: 560px) {
-    .navegador, li a {
+    .navegador{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -326,7 +282,7 @@ footer{
 
     }
 
-    #h1_index{
+    .contenedor-main__texto{
         font-size: 30px;
         font-family: 'Playfair Display', serif;
         color: #e2ae1d;
@@ -336,11 +292,11 @@ footer{
         text-align: center;
     }
       
-    #texto1_index{
+    .contenedor-main__parrafo1{
         font-size: 20px;  
     }
     
-    #texto2_index{
+    .contenedor-main__parrafo2{
         font-size: 10px;  
     }
 

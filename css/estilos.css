@@ -6,7 +6,7 @@
 
 
 body{
-    background-image: url(../imagenes/body_recortes.png);
+    background-image: url(../img/body_recortes.png);
     font-family: 'Chivo', sans-serif; 
     position: relative;
     padding-bottom: 0.5em;
@@ -97,7 +97,7 @@ margin: 20px auto auto auto;
 }
 
 .fondo_index{
-    background-image: url(../imagenes/body_recortes.png);
+    background-image: url(../img/body_recortes.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

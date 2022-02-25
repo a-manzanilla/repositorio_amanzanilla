@@ -43,11 +43,11 @@ body{
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    }
-
-    &__enlaces:hover {
+    &:hover {
         color: $colorUno;    
     }
+    }
+
 }
 
 .contenedor-main{

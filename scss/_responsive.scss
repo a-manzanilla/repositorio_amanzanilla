@@ -1,0 +1,82 @@
+/*Vista mobile*/
+
+@media only screen and (min-width: 0px) and (max-width: 560px) {
+    .navegador{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .contenedor-main__texto{
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+        color: #e2ae1d;
+        width: 1000px;
+        height: 50px;
+        justify-content: center;
+        text-align: center;
+        &__parrafo1{
+            font-size: 20px;  
+        }
+        
+        &__parrafo2{
+            font-size: 10px;  
+        }
+    }
+
+    .formulario{
+        height: 700px;
+        width: 560px;
+        margin: 0px;
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+    .contacto{
+        height: 300px;
+        width: 400px;
+    }
+
+    .field{
+        width: 350px;
+    }
+
+    .boton{
+        width: 350px;
+    }
+   
+    .mapa{
+        width: 350px;
+    }
+
+
+}
+/*Vista Tablet*/
+@media only screen and (min-width: 560px) and (max-width: 1000px) {
+    .navegador{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        &__parrafo1{
+            font-size: 60px;
+            font-family: 'Playfair Display', serif;
+            color: #e2ae1d;
+            width: 1000px;
+            height: 100px;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        &__parrafo2{
+            font-size: 30px;  
+        }
+    }
+
+     
+    }
+

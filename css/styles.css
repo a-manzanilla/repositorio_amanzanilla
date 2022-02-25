@@ -1,4 +1,4 @@
-@import url(_variables.scss);
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -56,12 +56,12 @@ body {
   .contenedor-main__texto {
     font-size: 90px;
     font-family: 'Playfair Display', serif;
-    color: #e2ae1d;
+    color: #f3c90eb4;
     width: 1000px;
     height: 120px;
     justify-content: center;
     text-align: center; }
-  .contenedor-main__texto:hover {
+  .contenedor-main:hover {
     color: #641c0bd5; }
   .contenedor-main__parrafo1 {
     font-size: 50px; }
@@ -81,3 +81,203 @@ body {
     margin: 10px;
     text-decoration: none;
     align-content: center; }
+
+/*Formación*/
+.contenedor-grid {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  animation: slideInUp;
+  animation-duration: 2s; }
+  .contenedor-grid__titulo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .contenedor-grid__logo {
+    height: 100px;
+    width: 100px; }
+  .contenedor-grid__card1 {
+    margin: 10px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .contenedor-grid__card2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: solid  black 1px;
+    border-left: solid  black 1px; }
+
+.contenedor-card {
+  margin: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: slideInUp;
+  animation-duration: 2s; }
+
+.contenedor-card__titulo {
+  margin-top: 50px; }
+
+.contenedor-card__imagen {
+  width: 300px;
+  height: 300px;
+  align-items: center; }
+
+.contenedor-card__texto {
+  margin: 5px; }
+
+.boton-verde {
+  padding: 10px;
+  position: absolute;
+  color: white;
+  background-color: #085035;
+  border-color: yellow;
+  border-radius: 5px;
+  text-decoration: none; }
+
+/*Herramientas*/
+#carouselExampleControls {
+  width: 1000px;
+  height: 500px;
+  margin: auto; }
+
+/*Servicios*/
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  animation: slideInUp;
+  animation-duration: 2s; }
+
+.contenedor-servicios {
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+  margin: 10px;
+  border-right: solid black 1px; }
+
+.contenedor-servicios__logo {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 30px; }
+
+/*Contacto*/
+.contenedor-contacto {
+  margin: 100px 100px 100px 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  animation: slideInUp;
+  animation-duration: 2s; }
+
+input, textarea {
+  border: 0;
+  outline: none;
+  width: 380px; }
+
+.formulario-campo {
+  margin: 20px 0px;
+  border-bottom: solid black 1px;
+  background-color: none;
+  width: 450px; }
+
+.boton {
+  border-radius: 10px;
+  padding: 10px;
+  width: 450px;
+  background-color: #fa9b1f;
+  font-family: 'Chivo', sans-serif;
+  font-size: 20px;
+  color: white; }
+
+.contenedor-mapa {
+  margin: 50px; }
+
+/*Vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 560px) {
+  .navegador {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; }
+  .contenedor-main__texto {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #e2ae1d;
+    width: 1000px;
+    height: 50px;
+    justify-content: center;
+    text-align: center; }
+  .contenedor-main__parrafo1 {
+    font-size: 20px; }
+  .contenedor-main__parrafo2 {
+    font-size: 10px; }
+  #carouselExampleControls {
+    width: 500px;
+    height: 500px;
+    margin: auto; }
+  .carousel-control-prev {
+    overflow: hidden; }
+  .carousel-control-prev {
+    height: 250px;
+    width: 75px; }
+  .carousel-control-next {
+    height: 250px;
+    width: 75px; }
+  .formulario {
+    height: 700px;
+    width: 560px;
+    margin: 0px;
+    justify-content: center;
+    text-align: center; }
+  .contacto {
+    height: 300px;
+    width: 400px; }
+  .field {
+    width: 350px; }
+  .boton {
+    width: 350px; }
+  .mapa {
+    width: 350px; } }
+
+/*Vista Tablet*/
+@media only screen and (min-width: 560px) and (max-width: 1000px) {
+  .navegador, li a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; }
+  #h1_index {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: #e2ae1d;
+    width: 1000px;
+    height: 100px;
+    justify-content: center;
+    text-align: center; }
+  #texto1_index {
+    font-size: 30px; }
+  #texto2_index {
+    font-size: 15px; } }

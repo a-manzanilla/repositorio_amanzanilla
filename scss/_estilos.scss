@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -13,41 +14,14 @@ body{
     min-height: 90vh;
 }
 
-/*Navegador*/ 
-.contenedor{
-    width: auto;
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin: 20px auto auto auto;
+.navbar-brand {
+    font-family: $fuenteSecundaria;
 }
 
-.navegador {
-    color: $negro;
+.nav-item{
+    font-family: $fuenteSecundaria;
     font-size: 20px;
-    font-weight: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style: none;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 15px;  
-
-    &__enlaces {
-        font-family:'Playfair Display', serif;
-        margin: 5px;
-        color: $negro;
-        display: flex;
-        flex-direction: row;
-        text-decoration: none; 
-    }
-    &:hover {
-        color: $colorUno;    
-        }
 }
-
 
 /*Pagina de inicio*/
 .contenedor-main{
@@ -245,9 +219,6 @@ body{
         width: 380px;
     }
 }
-
-
-
 
 .formulario-campo{
     margin: 20px 0px;

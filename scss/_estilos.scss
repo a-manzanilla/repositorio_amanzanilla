@@ -13,7 +13,7 @@ body{
     padding-bottom: 0.5em;
     min-height: 90vh;
 }
-
+ /*Navegador bootstrap*/
 .navbar-brand {
     font-family: $fuenteSecundaria;
 }
@@ -172,6 +172,66 @@ body{
 
 
 /*Herramientas*/
+.contenedor{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__tarjeta{
+        margin: 20px;
+    }
+}
+
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    margin: 0;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+    &:hover{
+        transform: perspective(600px) rotateY(180deg);
+
+        
+    }
+}
+
+
+.tarjeta__frontal{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+.tarjeta__trasera{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+.tarjeta__frontal{
+    display: block;
+    backface-visibility: hidden;
+}
+
+.tarjeta__trasera{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color:$negro;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+}
+
+
+
+
 
  
 

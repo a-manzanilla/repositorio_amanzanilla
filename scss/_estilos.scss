@@ -208,10 +208,7 @@ body{
 }
 
 .tarjeta__trasera{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    transition: all ease .5s;
+    @extend .tarjeta__frontal
 }
 
 .tarjeta__frontal{
@@ -224,6 +221,8 @@ body{
     top: 0;
     padding: 20px;
     color:$negro;
+    background-color: $blanco;
+    box-shadow: 0px 10px 10px -6px $negro;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     overflow: auto;
